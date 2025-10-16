@@ -1,3 +1,31 @@
+:root {
+  --primary-color: #816e94;
+  --secondary-color: #65B369;
+  --accent-color: #6D508A;
+  --background-color: #17101E;
+}
+
+.parent {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 1px black;
+  background-color:var(--secondary-color);
+  height: 240px;
+}
+.child {
+  border: solid 1px black;
+  padding: 1rem;
+  margin: 1rem;
+  color: black;
+
+}
+
+
 * {
   box-sizing: border-box;
 }
@@ -5,8 +33,8 @@
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
-  color: black;
-  background-color: white;
+  color: rgb(255, 255, 255);
+  background-color: var(--background-color);
 }
 
 nav {
@@ -17,7 +45,7 @@ nav {
   padding: 0.5rem;
   gap: 0.5rem;
   border-bottom: solid 1px #aaa;
-  background-color: #eee;
+  background-color: var(--background-color);
 }
 
 nav a {
@@ -28,19 +56,22 @@ nav a {
   border: solid 1px #aaa;
   text-align: center;
   text-decoration: none;
-  color: #555;
+  color: var(--accent-color);
 }
 
 nav a[aria-current='page'] {
   color: #000;
-  background-color: #d4d4d4;
+  background-color: var(--secondary-color);
 }
 
 main {
   padding: 1rem;
 }
 
-h1 {
+h1:hover {
   font-weight: bold;
   font-size: 1.5rem;
+}
+nav a:hover{
+  color: var(--secondary-color)
 }

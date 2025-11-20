@@ -1,9 +1,10 @@
 :root {
-  --primary-color: #816e94;
-  --secondary-color: #65B369;
+  --primary-color: #946e7e;
+  --secondary-color: #ffffff;
   --accent-color: #6D508A;
-  --background-color: #17101E;
+  --background-color: #4b3761;
 }
+
 
 .parent {
   display: flex;

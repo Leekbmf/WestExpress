@@ -1,10 +1,9 @@
 :root {
   --primary-color: #946e7e;
   --secondary-color: #ffffff;
-  --accent-color: #6D508A;
+  --accent-color: #6d508a;
   --background-color: #4b3761;
 }
-
 
 .parent {
   display: flex;
@@ -15,18 +14,27 @@
   justify-content: space-between;
   align-items: center;
   border: solid 1px black;
-  background-color:var(--secondary-color);
-  height: 240px;
+  background-color: var(--secondary-color);
+  height: auto;
 }
+
 .child {
   border: solid 1px black;
   padding: 1rem;
   margin: 1rem;
   color: black;
-
+  flex: 1 1 250px;
+  max-width: 300px;
 }
 
+.child img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover; /* adjust image cropping/fit */
+  border-radius: 6px;
+}
 
+/* global */
 * {
   box-sizing: border-box;
 }
@@ -34,7 +42,7 @@
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
-  color: rgb(255, 255, 255);
+  color: white;
   background-color: var(--background-color);
 }
 
@@ -60,9 +68,13 @@ nav a {
   color: var(--accent-color);
 }
 
-nav a[aria-current='page'] {
+nav a[aria-current="page"] {
   color: #000;
   background-color: var(--secondary-color);
+}
+
+nav a:hover {
+  color: var(--secondary-color);
 }
 
 main {
@@ -72,7 +84,4 @@ main {
 h1:hover {
   font-weight: bold;
   font-size: 1.5rem;
-}
-nav a:hover{
-  color: var(--secondary-color)
 }

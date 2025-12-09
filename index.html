@@ -51,6 +51,32 @@
           <img src="images./74a5c6675206ae155b31dbb6b5a7c3e1x.avif" alt="van" />
         </div>
       </div>
+      <label> Dark Mode
+<input type="checkbox" onchange="toggleDarkMode()">-
+
+    </label>
+    <script>
+      let darkMode = false;
+    function toggleDarkMode() {
+      // Check if darkMode is false
+      // If it's false -> change to true
+      // If it's true -> change to false
+      
+      if (darkMode == true) {
+        //darkMode Off
+        darkMode= false;
+        document.body.style["backgroundColor"]="#4b3761"
+      } else {
+    //darkMode On
+        darkMode= true;
+        document.body.style["backgroundColor"]="black"
+     
+      }
+    
+      }
+    
+    
+    </script>
     </main>
   </body>
 </html>

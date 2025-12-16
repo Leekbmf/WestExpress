@@ -37,10 +37,10 @@
     <h1> Contact Us!</h1>
     <form action="">
       <label>Name:
-        <input type="text">
+        <input type="text" id="nameField">
       </label>
       <label>Phone Number:
-        <input type="text">
+        <input type="text" id="numberField">
       </label>
       <label>Email:
         <input type="text">
@@ -59,7 +59,9 @@
     </form>
     <script>
       function formSubmit() {
-        alert("You Submitted");
+        const name = document.getElementById("nameField").value;
+        const telephone = document.getElementById("numberField").value;
+        alert("You Submitted " + name + " " + telephone + " ");
       }
     </script>
   </main>

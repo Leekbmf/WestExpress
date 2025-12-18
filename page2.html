@@ -43,10 +43,13 @@
         <input type="text" id="numberField">
       </label>
       <label>Email:
-        <input type="text">
+        <input type="text" id="emailField">
       </label>
-      <label> Reason:
-        <textarea>
+      <label>Reason:
+        <input type="text" id="reasonField">
+
+      </label>
+      <textarea>
 
         </textarea>
       </label>
@@ -61,7 +64,9 @@
       function formSubmit() {
         const name = document.getElementById("nameField").value;
         const telephone = document.getElementById("numberField").value;
-        alert("You Submitted " + name + " " + telephone + " ");
+        const email = document.getElementById("emailField").value;
+        const reason = document.getElementById("reasonField")
+        alert("You Submitted " + name + " " + telephone + " " + email + " " + reason);
       }
     </script>
   </main>
